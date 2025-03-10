@@ -9,7 +9,7 @@ const ListaUsuario = () => {
 
   useEffect(() => {
     const getUsuarios = async () => {
-      const res = await axios.get("http://localhost:4000/api/usuarios");
+      const res = await axios.get("https://proyecto-cliente-mern.onrender.com/api/usuarios");
       setLista(res.data);
     };
     getUsuarios();
@@ -17,7 +17,7 @@ const ListaUsuario = () => {
 
 
   const eliminarUsario = async (id) => {
-    await axios.delete(`http://localhost:4000/api/usuarios/${id}`);
+    await axios.delete(`https://proyecto-cliente-mern.onrender.com/api/usuarios/${id}`);
     // Actualizar la lista de usuarios después de eliminar uno
     setLista(lista.filter(usuario => usuario._id !== id));
   };
