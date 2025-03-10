@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const multer = require('multer');
 const path = require('path');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const usuarioCtrl = require('../controller/usuarioController');
 const Usuario = require('../models/usuario'); // Asegúrate de que el modelo esté importado
