@@ -13,7 +13,7 @@
   "type": "commonjs",
   "description": "Código para enseñar un MERN stack sencillo",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
